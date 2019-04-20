@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="P2___Cubo_Flotando" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cubo Flotando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4Z-i0-Yl5">
+                                <rect key="frame" x="116" y="20" width="143.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s18-qv-pYF" userLabel="General Stack View">
+                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="redraw" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tw1-IT-rwe" userLabel="Triple Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zp-TE-YmJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gn-cV-sZq">
+                                                        <rect key="frame" x="8" y="15" width="43" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Go-Xa-l44">
+                                                        <rect key="frame" x="103" y="10" width="266" height="31"/>
+                                                        <connections>
+                                                            <action selector="ladoSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="NsT-cf-T6U"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy4-gV-esJ">
+                                                        <rect key="frame" x="0.0" y="35" width="168" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3Go-Xa-l44" secondAttribute="trailing" constant="8" id="Fvg-8Y-eto"/>
+                                                    <constraint firstItem="4Gn-cV-sZq" firstAttribute="centerY" secondItem="3Zp-TE-YmJ" secondAttribute="centerY" id="HoH-iG-nba"/>
+                                                    <constraint firstItem="3Go-Xa-l44" firstAttribute="leading" secondItem="4Gn-cV-sZq" secondAttribute="trailing" constant="54" id="R9U-cS-yni"/>
+                                                    <constraint firstItem="3Go-Xa-l44" firstAttribute="centerY" secondItem="3Zp-TE-YmJ" secondAttribute="centerY" id="bbq-OO-oij"/>
+                                                    <constraint firstItem="4Gn-cV-sZq" firstAttribute="leading" secondItem="3Zp-TE-YmJ" secondAttribute="leadingMargin" id="dk6-Vh-xVn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-66-uIf" userLabel="grafica1" customClass="FunctionView" customModule="P2___Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="86.5"/>
+                                                <color key="backgroundColor" red="0.79832881919999998" green="1" blue="0.90745474599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="L4l-W2-cxd" appends="YES" id="kLG-2O-dZ1"/>
+                                                    <outletCollection property="gestureRecognizers" destination="Te1-2T-OOQ" appends="YES" id="KLL-fd-uq4"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="d1f-Zu-Kr3" userLabel="grafica2" customClass="FunctionView" customModule="P2___Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="136.5" width="375" height="86"/>
+                                                <color key="backgroundColor" red="0.74686546109999996" green="0.97617006100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-Le-5Gd" userLabel="grafica3" customClass="FunctionView" customModule="P2___Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="222.5" width="375" height="86.5"/>
+                                                <color key="backgroundColor" red="1" green="0.84772348939999997" blue="0.91429256569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="d1M-66-uIf" firstAttribute="top" secondItem="tw1-IT-rwe" secondAttribute="top" constant="50" id="ZZ7-17-b1e"/>
+                                            <constraint firstItem="d1M-66-uIf" firstAttribute="height" secondItem="d1f-Zu-Kr3" secondAttribute="height" id="gBc-4Y-M0k"/>
+                                            <constraint firstItem="d1f-Zu-Kr3" firstAttribute="height" secondItem="Tft-Le-5Gd" secondAttribute="height" id="uQf-Rg-ixE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="redraw" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d3W-3S-QLF" userLabel="Single Stack View">
+                                        <rect key="frame" x="0.0" y="309" width="375" height="309"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-rh-R2c">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHP-Jb-yIG">
+                                                        <rect key="frame" x="8" y="15" width="68" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="68" id="vK1-KJ-TDP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="TVu-r4-Ka1">
+                                                        <rect key="frame" x="103" y="10" width="266" height="31"/>
+                                                        <connections>
+                                                            <action selector="tiempoSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="UTR-Rz-rb4"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-sA-bjx">
+                                                        <rect key="frame" x="0.0" y="35" width="168" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="AHP-Jb-yIG" firstAttribute="centerY" secondItem="qPd-rh-R2c" secondAttribute="centerY" id="34P-Oa-UqK"/>
+                                                    <constraint firstItem="TVu-r4-Ka1" firstAttribute="centerY" secondItem="qPd-rh-R2c" secondAttribute="centerY" id="4WF-ca-E5p"/>
+                                                    <constraint firstItem="AHP-Jb-yIG" firstAttribute="leading" secondItem="qPd-rh-R2c" secondAttribute="leadingMargin" id="NPY-WT-qAT"/>
+                                                    <constraint firstItem="TVu-r4-Ka1" firstAttribute="leading" secondItem="AHP-Jb-yIG" secondAttribute="trailing" constant="29" id="Ros-uQ-Zmn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TVu-r4-Ka1" secondAttribute="trailing" constant="8" id="sju-e1-0by"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oyb-XX-zad" userLabel="grafica4" customClass="FunctionView" customModule="P2___Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="259"/>
+                                                <color key="backgroundColor" red="0.79832881919999998" green="1" blue="0.90745474599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="KtK-vO-oYY" appends="YES" id="v32-sJ-Dgm"/>
+                                                    <outletCollection property="gestureRecognizers" destination="dfJ-3U-scs" appends="YES" id="Oqm-Zc-zfe"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tw1-IT-rwe" firstAttribute="width" secondItem="d3W-3S-QLF" secondAttribute="width" id="aVM-10-cFQ"/>
+                                    <constraint firstItem="qPd-rh-R2c" firstAttribute="height" secondItem="3Zp-TE-YmJ" secondAttribute="height" id="jPR-rc-7uZ"/>
+                                    <constraint firstItem="qPd-rh-R2c" firstAttribute="width" secondItem="3Zp-TE-YmJ" secondAttribute="width" id="m6f-xg-gm2"/>
+                                    <constraint firstItem="tw1-IT-rwe" firstAttribute="height" secondItem="d3W-3S-QLF" secondAttribute="height" id="t5O-Z0-CUu"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99526474220000005" green="1" blue="0.8681103725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s18-qv-pYF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7JT-qY-PA3"/>
+                            <constraint firstItem="v4Z-i0-Yl5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Igm-cZ-XnC"/>
+                            <constraint firstItem="v4Z-i0-Yl5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kqy-df-HMY"/>
+                            <constraint firstItem="s18-qv-pYF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="huG-fM-uwn"/>
+                            <constraint firstItem="s18-qv-pYF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="isu-NZ-qpq"/>
+                            <constraint firstItem="s18-qv-pYF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l7I-xP-gx1"/>
+                            <constraint firstItem="s18-qv-pYF" firstAttribute="top" secondItem="v4Z-i0-Yl5" secondAttribute="bottom" constant="5" id="tHT-NW-N5k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="grafica1View" destination="d1M-66-uIf" id="Aoh-aq-FcY"/>
+                        <outlet property="grafica2View" destination="d1f-Zu-Kr3" id="Ee2-hP-Yxm"/>
+                        <outlet property="grafica3View" destination="Tft-Le-5Gd" id="tsQ-jb-1gH"/>
+                        <outlet property="grafica4View" destination="oyb-XX-zad" id="Igt-C9-Ij2"/>
+                        <outlet property="ladoDataLabel" destination="Cy4-gV-esJ" id="10x-tV-MZU"/>
+                        <outlet property="ladoLabel" destination="4Gn-cV-sZq" id="oQc-5y-Bbi"/>
+                        <outlet property="ladoSlider" destination="3Go-Xa-l44" id="zTu-hO-rZ3"/>
+                        <outlet property="tiempoDataLabel" destination="SuW-sA-bjx" id="UlQ-ld-oI9"/>
+                        <outlet property="tiempoLabel" destination="AHP-Jb-yIG" id="8v9-CD-qtj"/>
+                        <outlet property="tiempoSlider" destination="TVu-r4-Ka1" id="H7q-5z-a05"/>
+                        <outlet property="titleLabel" destination="v4Z-i0-Yl5" id="6hV-Cz-Nyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="KtK-vO-oYY" userLabel="grafica4 Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="zoomGrafica4:" destination="BYZ-38-t0r" id="2ZG-eM-wSS"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="L4l-W2-cxd" userLabel="grafica1 Swipe Right Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeRightGRafica1:" destination="BYZ-38-t0r" id="twR-x7-eaS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Te1-2T-OOQ" userLabel="grafica2 Swipe Left Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeLeftgrafica1:" destination="BYZ-38-t0r" id="uMJ-KD-Th4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="dfJ-3U-scs" userLabel="grafica4 Swipe Up Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeUpGrafica4:" destination="BYZ-38-t0r" id="CCS-el-8Mh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
