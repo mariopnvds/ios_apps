@@ -79,4 +79,6 @@ It is mandatory to use Autolayout and Size Classes so that the interface adapts 
 Add two gesture recognizers.
 
 ## Demo
-![Demo](p2.gif){ height="400" style="display: block; margin: 0 auto" }
+<p align="center">
+    <img src="p2.gif" alt="Demo" height="400" />
+</p>
