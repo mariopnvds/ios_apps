@@ -20,4 +20,6 @@ User preferences should also be used as a persistence mechanism to remember the 
 The application must have icons, initial image, and adapt with the turns of the terminal, etc.
 
 ## Demo
-![Demo](p3.gif){ height="400" style="display: block; margin: 0 auto" }
+<p align="center">
+    <img src="p3.gif" alt="Demo" height="400" />
+</p>

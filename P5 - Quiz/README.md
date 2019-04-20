@@ -34,4 +34,6 @@ In the moodle of the subject there is a pdf document where all the REST API prim
 Convert the stars into buttons that allow you to mark or unmark a quiz as a favorite.
 
 ## Demo
-![Demo](p5.gif){ height="400" style="display: block; margin: 0 auto" }
+<p align="center">
+    <img src="p5.gif" alt="Demo" height="400" />
+</p>

@@ -22,4 +22,6 @@ To do this practice, the pokedex.plist file is provided with all the data about 
 The application must have icons, initial image, and adapt with the turns of the terminal, etc.
 
 ## Demo
-![Demo](p4.gif){ height="400" style="display: block; margin: 0 auto" }
+<p align="center">
+    <img src="p4.gif" alt="Demo" height="400" />
+</p>
