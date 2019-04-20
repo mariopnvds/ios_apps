@@ -76,7 +76,7 @@ The application must have icons and initial image.
 It is mandatory to use Autolayout and Size Classes so that the interface adapts perfectly to devices of different sizes, and the orientation changes.
 
 ## Upgrades
-Add two gesture recognizers. What the student wants. Explain them in 00datos to easily evaluate them.
+Add two gesture recognizers.
 
 ## Demo
-![Demo](p2.gif)
+![Demo](p2.gif){ height="400" style="display: block; margin: 0 auto" }
